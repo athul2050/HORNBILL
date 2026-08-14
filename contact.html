@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Hornbill</title>
+<meta name="description" content="Start a conversation with Hornbill about an aerodynamics, ballistics, aeroelasticity, or acoustics engineering problem.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+        <polygon points="16,2 29,9 29,23 16,30 3,23 3,9" fill="none" stroke="#18b7e9" stroke-width="1.6"/>
+        <path d="M9 20 L16 8 L23 20 L18 20 L16 16 L14 20 Z" fill="#18b7e9"/>
+      </svg>
+      <span class="name">HORNBILL</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item">
+          <button aria-expanded="false">Technologies <span class="chev">&#9662;</span></button>
+          <div class="mega">
+            <a class="m-item" href="velox-cfd.html"><span class="m-title">Velox CFD</span><span class="m-desc">High-fidelity external aerodynamic simulation</span></a>
+            <div class="m-item is-pending"><span class="m-title">Velox Ballistix <span class="m-soon">template only</span></span><span class="m-desc">Internal ballistics performance prediction</span></div>
+            <div class="m-item is-pending"><span class="m-title">Velox Impact <span class="m-soon">content gap</span></span><span class="m-desc">Named in overview deck — no source content supplied</span></div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <button aria-expanded="false">Capabilities <span class="chev">&#9662;</span></button>
+          <div class="mega">
+            <a class="m-item" href="aerodynamics.html"><span class="m-title">Aerodynamics</span><span class="m-desc">Flow &middot; Pressure &middot; Performance</span></a>
+            <div class="m-item is-pending"><span class="m-title">Ballistics <span class="m-soon">template only</span></span><span class="m-desc">Internal Behaviour &middot; Performance Prediction</span></div>
+            <div class="m-item is-pending"><span class="m-title">Aeroelasticity <span class="m-soon">template only</span></span><span class="m-desc">Fluid &middot; Structure &middot; Interaction</span></div>
+            <div class="m-item is-pending"><span class="m-title">Acoustics <span class="m-soon">template only</span></span><span class="m-desc">Source &middot; Propagation &middot; Response</span></div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <button aria-expanded="false">Programs <span class="chev">&#9662;</span></button>
+          <div class="mega">
+            <a class="m-item" href="rocketry.html"><span class="m-title">Rocketry Workshop</span><span class="m-desc">One-day model rocket build &amp; launch</span></a>
+            <div class="m-item is-pending"><span class="m-title">UAV Flying Workshop <span class="m-soon">template only</span></span><span class="m-desc">One-day model UAV build &amp; flight</span></div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="company.html">Company</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-outline" href="contact.html" aria-current="page">Contact</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container breadcrumb"><a href="index.html">Home</a> / Contact</div>
+
+  <section class="section--tight section">
+    <div class="container" style="max-width:720px">
+      <div class="eyebrow">Contact</div>
+      <h1 style="font-size:clamp(30px,4vw,46px)">Discuss an engineering problem.</h1>
+      <p class="lede">Whether you're evaluating a platform, scoping a consultancy engagement, or enquiring about a student program, tell us where to start.</p>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container two-col">
+
+      <div>
+        <div class="eyebrow">Send an Enquiry</div>
+
+        <form id="enquiry-form" novalidate>
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="org">Organization</label>
+            <input type="text" id="org" name="org" autocomplete="organization">
+            <div class="hint">Optional — helps us route institutional and defence enquiries correctly</div>
+          </div>
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-field">
+            <label for="domain">Domain of interest</label>
+            <select id="domain" name="domain">
+              <option value="">Select a domain</option>
+              <option value="velox-cfd">Velox CFD</option>
+              <option value="velox-ballistix">Velox Ballistix</option>
+              <option value="aerodynamics">Aerodynamics</option>
+              <option value="ballistics">Ballistics</option>
+              <option value="aeroelasticity">Aeroelasticity</option>
+              <option value="acoustics">Acoustics</option>
+              <option value="rocketry">Rocketry Workshop</option>
+              <option value="uav">UAV Flying Workshop</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Enquiry</button>
+        </form>
+
+        <div id="form-status" class="form-status" hidden tabindex="-1">
+          <h3>Enquiry received.</h3>
+          <p>This is a static prototype, so nothing was sent — in production this would route to the Hornbill team and trigger a confirmation email.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="eyebrow">Contact Channels</div>
+        <div class="spec-block">
+          <div class="spec-row"><span class="k">EMAIL</span><span class="v"><span class="metric-placeholder">[EMAIL REQUIRED]</span></span></div>
+          <div class="spec-row"><span class="k">PHONE</span><span class="v"><span class="metric-placeholder">[PHONE REQUIRED]</span></span></div>
+          <div class="spec-row"><span class="k">ADDRESS</span><span class="v"><span class="metric-placeholder">[ADDRESS REQUIRED]</span></span></div>
+        </div>
+        <p style="margin-top:16px;font-size:13.5px">Source documents redact the working contact address (<code>****@hornbill.com</code>) and supply no phone or office address — see the Content Gap Analysis for detail.</p>
+
+        <div class="eyebrow" style="margin-top:32px">What Happens Next</div>
+        <ol style="color:var(--text-muted-on-dark);font-size:14.5px">
+          <li>Your enquiry is routed to the relevant technical or program team</li>
+          <li>A specialist reviews the domain of interest and message</li>
+          <li>You're contacted to scope the discussion further</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="brand" style="color:var(--text-on-dark)">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+          <polygon points="16,2 29,9 29,23 16,30 3,23 3,9" fill="none" stroke="#18b7e9" stroke-width="1.6"/>
+          <path d="M9 20 L16 8 L23 20 L18 20 L16 16 L14 20 Z" fill="#18b7e9"/>
+        </svg>
+        <span class="name">HORNBILL</span>
+      </div>
+      <p>Advanced computational engineering technology for aerospace and defence.</p>
+    </div>
+    <div>
+      <h5>Technologies</h5>
+      <ul><li><a href="velox-cfd.html">Velox CFD</a></li><li><a href="index.html#technologies">Velox Ballistix</a></li></ul>
+    </div>
+    <div>
+      <h5>Capabilities</h5>
+      <ul><li><a href="aerodynamics.html">Aerodynamics</a></li><li><a href="index.html#capabilities">Ballistics</a></li><li><a href="index.html#capabilities">Aeroelasticity</a></li><li><a href="index.html#capabilities">Acoustics</a></li></ul>
+    </div>
+    <div>
+      <h5>Programs</h5>
+      <ul><li><a href="rocketry.html">Rocketry Workshop</a></li><li><a href="index.html#technologies">UAV Flying Workshop</a></li></ul>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul><li><a href="company.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; Hornbill. Prototype build — content sourced from supplied documents only.</span>
+    <span>Contact details pending — see Content Gap Analysis</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

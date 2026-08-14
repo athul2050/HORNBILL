@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocketry Workshop for Students — Hornbill</title>
+<meta name="description" content="A one-day, hands-on Rocketry Workshop giving students exposure to model rocket development, assembly, and launch.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+        <polygon points="16,2 29,9 29,23 16,30 3,23 3,9" fill="none" stroke="#18b7e9" stroke-width="1.6"/>
+        <path d="M9 20 L16 8 L23 20 L18 20 L16 16 L14 20 Z" fill="#18b7e9"/>
+      </svg>
+      <span class="name">HORNBILL</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item">
+          <button aria-expanded="false">Technologies <span class="chev">&#9662;</span></button>
+          <div class="mega">
+            <a class="m-item" href="velox-cfd.html"><span class="m-title">Velox CFD</span><span class="m-desc">High-fidelity external aerodynamic simulation</span></a>
+            <div class="m-item is-pending"><span class="m-title">Velox Ballistix <span class="m-soon">template only</span></span><span class="m-desc">Internal ballistics performance prediction</span></div>
+            <div class="m-item is-pending"><span class="m-title">Velox Impact <span class="m-soon">content gap</span></span><span class="m-desc">Named in overview deck — no source content supplied</span></div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <button aria-expanded="false">Capabilities <span class="chev">&#9662;</span></button>
+          <div class="mega">
+            <a class="m-item" href="aerodynamics.html"><span class="m-title">Aerodynamics</span><span class="m-desc">Flow &middot; Pressure &middot; Performance</span></a>
+            <div class="m-item is-pending"><span class="m-title">Ballistics <span class="m-soon">template only</span></span><span class="m-desc">Internal Behaviour &middot; Performance Prediction</span></div>
+            <div class="m-item is-pending"><span class="m-title">Aeroelasticity <span class="m-soon">template only</span></span><span class="m-desc">Fluid &middot; Structure &middot; Interaction</span></div>
+            <div class="m-item is-pending"><span class="m-title">Acoustics <span class="m-soon">template only</span></span><span class="m-desc">Source &middot; Propagation &middot; Response</span></div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <button aria-expanded="false">Programs <span class="chev">&#9662;</span></button>
+          <div class="mega">
+            <a class="m-item" href="rocketry.html"><span class="m-title">Rocketry Workshop</span><span class="m-desc">One-day model rocket build &amp; launch</span></a>
+            <div class="m-item is-pending"><span class="m-title">UAV Flying Workshop <span class="m-soon">template only</span></span><span class="m-desc">One-day model UAV build &amp; flight</span></div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="company.html">Company</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-outline" href="contact.html">Contact</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container breadcrumb"><a href="index.html">Home</a> / <a href="index.html#technologies">Programs</a> / Rocketry Workshop</div>
+
+  <!-- HERO -->
+  <section class="section--dark hero section--tight">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Program &middot; One Day</div>
+        <h1>Rocketry Workshop</h1>
+        <p class="lede">Hands-on exposure to the development, assembly, and launching of a model rocket — for young and enthusiastic students.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#enquire">Enquire about this Program</a>
+        </div>
+      </div>
+      <div class="visual" aria-hidden="true">
+        <svg viewBox="0 0 480 360" width="100%" height="100%" role="img" aria-label="Schematic diagram of a model rocket with a launch trajectory arc">
+          <rect width="480" height="360" fill="#0f1c29"/>
+          <g stroke="#22323f" stroke-dasharray="3 5">
+            <path d="M60 320 Q 220 60 420 40" fill="none"/>
+          </g>
+          <g transform="translate(70,290) rotate(-58)">
+            <polygon points="0,-70 12,-10 -12,-10" fill="none" stroke="#18b7e9" stroke-width="1.5"/>
+            <rect x="-12" y="-10" width="24" height="46" fill="none" stroke="#18b7e9" stroke-width="1.5"/>
+            <polygon points="-12,36 -22,54 -12,46" fill="none" stroke="#6fe3d6" stroke-width="1.3"/>
+            <polygon points="12,36 22,54 12,46" fill="none" stroke="#6fe3d6" stroke-width="1.3"/>
+            <line x1="0" y1="36" x2="0" y2="58" stroke="#6fe3d6" stroke-width="1.3"/>
+          </g>
+          <circle cx="420" cy="40" r="3" fill="#6fe3d6"/>
+          <text x="18" y="28" fill="#6fe3d6" font-family="ui-monospace,Consolas,monospace" font-size="10">TRAJECTORY / APOGEE</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IT IS -->
+  <section class="section section--panel">
+    <div class="container" style="max-width:720px">
+      <div class="eyebrow">What It Is</div>
+      <h2>From fundamentals to a real launch, in one day.</h2>
+      <p class="lede">With the rapid growth of the space, aerospace, and defence sectors, the design and development of launch vehicles and rocket systems have gained significant importance in recent years. This workshop introduces participants to the fundamentals of model rocketry, key structural and system-level components, assembly procedures, and basic principles of rocket flight — concluding with a practical launching session.</p>
+    </div>
+  </section>
+
+  <!-- WHAT YOU'LL DO -->
+  <section class="section section--grey">
+    <div class="container">
+      <div class="eyebrow">What You'll Do</div>
+      <h2>An application-oriented walk through the full build.</h2>
+      <div class="grid cols-4" style="margin-top:24px">
+        <div class="card"><h4>Fundamentals</h4><p>Introduction to model rocketry principles</p></div>
+        <div class="card"><h4>Components</h4><p>Key structural and system-level parts</p></div>
+        <div class="card"><h4>Assembly</h4><p>Hands-on assembly procedures</p></div>
+        <div class="card"><h4>Launch</h4><p>A practical launching session</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section class="section section--panel">
+    <div class="container two-col">
+      <div>
+        <div class="eyebrow">Who It's For</div>
+        <h2>Young, enthusiastic students.</h2>
+        <p>Designed for participants curious about launch vehicles and rocket systems, with no prior experience required — an engaging, application-oriented introduction to the complete model rocket development process.</p>
+      </div>
+      <div class="card">
+        <h4>Related capability</h4>
+        <p>Rocket flight begins with the same aerodynamic fundamentals taught in Hornbill's Aerodynamics capability.</p>
+        <a class="btn btn-text" href="aerodynamics.html">Explore Aerodynamics</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENQUIRE -->
+  <section class="section--dark cta-band" id="enquire">
+    <div class="container">
+      <div class="eyebrow" style="justify-content:center">Get Involved</div>
+      <h2>Enquire about the Rocketry Workshop.</h2>
+      <div class="btn-row"><a class="btn btn-primary" href="contact.html">Enquire about this Program</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="brand" style="color:var(--text-on-dark)">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+          <polygon points="16,2 29,9 29,23 16,30 3,23 3,9" fill="none" stroke="#18b7e9" stroke-width="1.6"/>
+          <path d="M9 20 L16 8 L23 20 L18 20 L16 16 L14 20 Z" fill="#18b7e9"/>
+        </svg>
+        <span class="name">HORNBILL</span>
+      </div>
+      <p>Advanced computational engineering technology for aerospace and defence.</p>
+    </div>
+    <div>
+      <h5>Technologies</h5>
+      <ul><li><a href="velox-cfd.html">Velox CFD</a></li><li><a href="index.html#technologies">Velox Ballistix</a></li></ul>
+    </div>
+    <div>
+      <h5>Capabilities</h5>
+      <ul><li><a href="aerodynamics.html">Aerodynamics</a></li><li><a href="index.html#capabilities">Ballistics</a></li><li><a href="index.html#capabilities">Aeroelasticity</a></li><li><a href="index.html#capabilities">Acoustics</a></li></ul>
+    </div>
+    <div>
+      <h5>Programs</h5>
+      <ul><li><a href="rocketry.html">Rocketry Workshop</a></li><li><a href="index.html#technologies">UAV Flying Workshop</a></li></ul>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul><li><a href="company.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; Hornbill. Prototype build — content sourced from supplied documents only.</span>
+    <span>Contact details pending — see Content Gap Analysis</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
