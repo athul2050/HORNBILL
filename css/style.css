@@ -143,7 +143,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .site-header .container { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 .brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 700; font-size: 17px; color: var(--ink); }
-.brand .mark { width: 30px; height: 30px; flex-shrink: 0; }
+.brand .mark { width: 28px; height: 28px; flex-shrink: 0; object-fit: contain; }
 .brand .name { letter-spacing: -0.01em; }
 
 .primary-nav { display: flex; align-items: center; gap: 4px; }
@@ -226,6 +226,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .m-arc span:not(:last-child)::after { content: "→"; margin-left: 10px; color: var(--text-faint-on-dark); }
 .module h3 { font-size: 26px; }
 .m-visual { border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-dark); background: var(--navy-800); aspect-ratio: 5/4; }
+
+/* Real simulation media (photos/GIFs/PNGs from Assets) sit letterboxed inside the
+   dark instrument-panel visuals, alongside the hand-drawn SVG motifs used elsewhere. */
+.visual img, .m-visual img {
+  width: 100%; height: 100%; object-fit: contain; padding: 20px; box-sizing: border-box;
+}
+.visual .figcaption, .m-visual .figcaption {
+  position: absolute; left: 14px; bottom: 12px; font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--turquoise); opacity: 0.85;
+  background: rgba(7, 15, 24, 0.55); padding: 3px 8px; border-radius: var(--radius-sm);
+}
+.visual, .m-visual { position: relative; }
 
 /* ---------- Workflow diagram ---------- */
 .workflow { display: flex; gap: 0; overflow-x: auto; padding: 8px 0 18px; margin-top: 32px; }
