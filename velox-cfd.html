@@ -12,10 +12,7 @@
 <header class="site-header">
   <div class="container">
     <a class="brand" href="index.html">
-      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
-        <polygon points="16,2 29,9 29,23 16,30 3,23 3,9" fill="none" stroke="#18b7e9" stroke-width="1.6"/>
-        <path d="M9 20 L16 8 L23 20 L18 20 L16 16 L14 20 Z" fill="#18b7e9"/>
-      </svg>
+      <img class="mark" src="Assets/Logo.png" alt="" width="28" height="28">
       <span class="name">HORNBILL</span>
     </a>
     <nav class="primary-nav" aria-label="Primary">
@@ -70,22 +67,9 @@
           <a class="btn btn-outline" href="contact.html">Request Technical Consultation</a>
         </div>
       </div>
-      <div class="visual" aria-hidden="true">
-        <svg viewBox="0 0 480 360" width="100%" height="100%" role="img" aria-label="Computational mesh with pressure-gradient surface over a complex geometry">
-          <rect width="480" height="360" fill="#0f1c29"/>
-          <g stroke="#1d3244" stroke-width="0.7" opacity="0.9">
-            <path d="M0 60 Q 240 20 480 60" fill="none"/><path d="M0 110 Q 240 70 480 110" fill="none"/>
-            <path d="M0 160 Q 240 130 480 160" fill="none"/><path d="M0 210 Q 240 195 480 210" fill="none"/>
-            <path d="M0 260 Q 240 255 480 260" fill="none"/><path d="M0 310 Q 240 305 480 310" fill="none"/>
-            <path d="M60 0 Q 20 180 60 360" fill="none"/><path d="M140 0 Q 110 180 140 360" fill="none"/>
-            <path d="M220 0 Q 210 180 220 360" fill="none"/><path d="M300 0 Q 310 180 300 360" fill="none"/>
-            <path d="M380 0 Q 400 180 380 360" fill="none"/><path d="M440 0 Q 465 180 440 360" fill="none"/>
-          </g>
-          <ellipse cx="230" cy="175" rx="130" ry="46" fill="#18b7e9" opacity="0.18"/>
-          <ellipse cx="230" cy="175" rx="90" ry="30" fill="#6fe3d6" opacity="0.22"/>
-          <path d="M70 180 C 150 130, 320 130, 420 175" fill="none" stroke="#123246" stroke-width="26" stroke-linecap="round" opacity="0.8"/>
-          <text x="18" y="28" fill="#6fe3d6" font-family="ui-monospace,Consolas,monospace" font-size="10">MESH · SURFACE PRESSURE</text>
-        </svg>
+      <div class="visual">
+        <img src="Assets/aerodynamics.gif" alt="CFD simulation output from Velox CFD showing a pressure field over a wedge geometry" loading="lazy">
+        <span class="figcaption">VELOX CFD &middot; LIVE SOLVER OUTPUT</span>
       </div>
     </div>
   </section>
@@ -180,6 +164,11 @@
       <h2>Validated performance</h2>
       <p class="lede">No benchmark figures, accuracy comparisons, or case studies were present in the supplied source material. Rather than estimate them, this section is left as an explicit placeholder.</p>
       <p><span class="metric-placeholder">[VALIDATED PERFORMANCE METRIC REQUIRED]</span></p>
+
+      <figure style="margin:28px 0 0;max-width:520px;border:1px solid var(--border-light);border-radius:var(--radius-md);overflow:hidden;background:var(--light-grey)">
+        <img src="Assets/flutter.png" alt="Velox CFD pressure and density contours around an airfoil, from a transonic flutter analysis" style="width:100%;display:block" loading="lazy">
+        <figcaption style="padding:12px 18px;font-size:12.5px;color:var(--ink-faint)">Solver output — pressure and density contours from a transonic flutter case. Illustrative of solver capability; not a validated accuracy benchmark.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -199,10 +188,7 @@
   <div class="container footer-grid">
     <div class="footer-brand">
       <div class="brand" style="color:var(--text-on-dark)">
-        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
-          <polygon points="16,2 29,9 29,23 16,30 3,23 3,9" fill="none" stroke="#18b7e9" stroke-width="1.6"/>
-          <path d="M9 20 L16 8 L23 20 L18 20 L16 16 L14 20 Z" fill="#18b7e9"/>
-        </svg>
+        <img class="mark" src="Assets/Logo.png" alt="" width="28" height="28">
         <span class="name">HORNBILL</span>
       </div>
       <p>Advanced computational engineering technology for aerospace and defence.</p>
@@ -225,7 +211,7 @@
     </div>
   </div>
   <div class="container footer-bottom">
-    <span>&copy; Hornbill. Prototype build — content sourced from supplied documents only.</span>
+    <span>&copy; Hornbill Aerospace and Defence Private Limited. Prototype build — content sourced from supplied documents only.</span>
     <span>Contact details pending — see Content Gap Analysis</span>
   </div>
 </footer>
